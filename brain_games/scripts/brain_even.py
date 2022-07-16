@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import prompt
 from brain_games.games.even import even_game
 
 
