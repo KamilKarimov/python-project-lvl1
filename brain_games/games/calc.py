@@ -3,8 +3,8 @@ import prompt
 import random
 
 
-def calc(number1, number2, exp):
-    correct_answer = f'{number1} {exp} {number2}'
+#def calc(number1, number2, exp):
+    
 
 
 def calc_game():
@@ -16,10 +16,11 @@ def calc_game():
     while counter != 3:
         number1 = random.randint(1, 100)
         number2 = random.randint(1, 100)
-        exp = random.choice('+', '-', '*')
+        exp = random.choice('+-*')
+        correct_answer = eval(f'{number1} {exp} {number2}')
         print(f'Question: {number1} {exp} {number2}')
         user_answer = prompt.string('Your answer: ')
-        if user_answer == correct_answer:
+        if int(user_answer) == correct_answer:
             print('Correct!')
             counter += 1
         else:
