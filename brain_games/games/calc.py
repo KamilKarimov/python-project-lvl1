@@ -3,10 +3,6 @@ import prompt
 import random
 
 
-#def calc(number1, number2, exp):
-    
-
-
 def calc_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name?')
