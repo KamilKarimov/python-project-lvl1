@@ -16,7 +16,7 @@ def gcd_game():
         while correct_answer > 0:
             if number1 % correct_answer == 0 and number2 % correct_answer == 0:
                 break
-            correct_answer -=1
+            correct_answer -= 1
         print(f'Question: {number1} {number2}')
         user_answer = prompt.string('Your answer: ')
         if str(user_answer) == str(correct_answer):
@@ -29,4 +29,4 @@ def gcd_game():
             return
         if counter == 3:
             print(f'Congratulations, {name}!')
-   
+
