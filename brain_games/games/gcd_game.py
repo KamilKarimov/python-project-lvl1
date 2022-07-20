@@ -29,4 +29,3 @@ def gcd_game():
             return
         if counter == 3:
             print(f'Congratulations, {name}!')
-
