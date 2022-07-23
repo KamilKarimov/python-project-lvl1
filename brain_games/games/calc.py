@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 import prompt
 import random
+from brain_games.logic import welcome_user
+from brain_games.logic import get_result
 
-
+ 
 def calc_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?')
-    print(f'Hello, {name}!')
+    name = welcome_user()
     print('What is the result of the expression?')
     counter = 0
     while counter != 3:
@@ -16,12 +16,5 @@ def calc_game():
         correct_answer = eval(f'{number1} {exp} {number2}')
         print(f'Question: {number1} {exp} {number2}')
         user_answer = prompt.string('Your answer: ')
-        if int(user_answer) == correct_answer:
-            print('Correct!')
-            counter += 1
-        else:
-            print(f"'{user_answer}' is wrong answer ;(."
-                  f"Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return
+        get_result(user_answer, correct_answer, name)
     print(f'Congratulations, {name}!')
