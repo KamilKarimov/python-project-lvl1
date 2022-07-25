@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import prompt
 import random
 
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
