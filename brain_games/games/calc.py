@@ -3,7 +3,7 @@ import random
 
 TASK = 'What is the result of the expression?'
 
- 
+
 def get_round():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
