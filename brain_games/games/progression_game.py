@@ -16,5 +16,6 @@ def get_round():
         else:
             correct_answer = progression[index + 1] - num
         question = ' '.join(
-        '..' if num == correct_answer else str(num) for num in progression)
+            '..' if num == correct_answer else str(num) for num in progression
+        )
     return question, correct_answer
