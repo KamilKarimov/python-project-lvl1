@@ -20,7 +20,7 @@ def is_prime(number):
 
 
 def get_round():
-    number = random.randint(2, 100)
+    number = random.randint(1, 100)
     question = number
     if is_prime(number):
         correct_answer = "yes"
