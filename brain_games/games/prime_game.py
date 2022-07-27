@@ -20,11 +20,10 @@ def is_prime(number):
 
 
 def get_round():
-    for _ in range(3):
-        number = random.randint(2, 100)
-        question = number
-        if is_prime(number):
-            correct_answer = "yes"
-        else:
-            correct_answer = "no"
+    number = random.randint(2, 100)
+    question = number
+    if is_prime(number):
+        correct_answer = "yes"
+    else:
+        correct_answer = "no"
     return question, correct_answer

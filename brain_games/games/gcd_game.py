@@ -5,13 +5,12 @@ TASK = 'Find the greatest common divisor of given numbers.'
 
 
 def get_round():
-    for _ in range(3):
-        number1 = random.randint(1, 100)
-        number2 = random.randint(1, 100)
-        question = f'{number1} {number2}'
-        correct_answer = number1
-        while correct_answer > 0:
-            if number1 % correct_answer == 0 and number2 % correct_answer == 0:
-                break
-            correct_answer -= 1
+    number1 = random.randint(1, 100)
+    number2 = random.randint(1, 100)
+    question = f'{number1} {number2}'
+    correct_answer = number1
+    while correct_answer > 0:
+        if number1 % correct_answer == 0 and number2 % correct_answer == 0:
+            break
+        correct_answer -= 1
     return question, correct_answer
