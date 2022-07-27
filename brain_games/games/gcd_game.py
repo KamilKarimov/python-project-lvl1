@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import random
 
 TASK = 'Find the greatest common divisor of given numbers.'

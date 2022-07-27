@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import random
 
 TASK = 'What number is missing in the progression?'
