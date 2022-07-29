@@ -2,6 +2,7 @@ import random
 
 TASK = 'What is the result of the expression?'
 
+
 def get_correct_answer():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
@@ -13,6 +14,7 @@ def get_correct_answer():
     else:
         correct_answer = number1 * number2
     return number1, number2, exp, correct_answer
+
 
 def get_round():
     number1, number2, exp, correct_answer = get_correct_answer()

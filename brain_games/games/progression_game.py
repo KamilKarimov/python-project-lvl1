@@ -9,7 +9,6 @@ def get_round():
     random_index = random.randint(0, len(progression) - 1)
     correct_answer = progression[random_index]
     progression[random_index] = '..'
-    index = progression.index('..')
     question = ' '.join(
         '..' if num == correct_answer else str(num) for num in progression
     )
